@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お買い物練習アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <!-- お小遣い入力画面 -->
+        <section id="screen-allowance">
+            <h2>お小遣いを入力してください</h2>
+            <input type="number" id="allowance" placeholder="例：500">
+            <button onclick="goToAreaSelection()">お店に行く！</button>
+        </section>
+
+        <!-- エリア選択画面 -->
+        <section id="screen-area" style="display:none">
+            <h2>エリアを選んでください</h2>
+            <p id="allowance-display"></p>
+            <div class="area-list">
+                <div class="area-card">
+                    <img src="images/area_snack.png" alt="お菓子エリア">
+                    <button onclick="selectArea('お菓子')">🍭 お菓子</button>
+                </div>
+                <div class="area-card">
+                    <img src="images/area_toy.png" alt="おもちゃエリア">
+                    <button onclick="selectArea('おもちゃ')">🧸 おもちゃ</button>
+                </div>
+                <div class="area-card">
+                    <img src="images/area_drink.png" alt="飲み物エリア">
+                    <button onclick="selectArea('飲み物')">🥤 飲み物</button>
+                </div>
+                <div class="area-card">
+                    <img src="images/area_book.png" alt="本エリア">
+                    <button onclick="selectArea('本')">📚 本</button>
+                </div>
+            </div>
+            <h3>今のかごの中身</h3>
+            <div id="cart-preview"></div>
+            <button onclick="goToCheckout()">レジへ行く</button>
+        </section>
+
+        <!-- 商品一覧画面 -->
+        <section id="screen-items" style="display:none">
+            <h2 id="area-title">商品</h2>
+            <div id="item-list" class="item-list"></div>
+            <button onclick="backToArea()">エリアにもどる</button>
+        </section>
+
+        <!-- レジ画面 -->
+        <section id="screen-checkout" style="display:none">
+            <h2>レジ画面</h2>
+
+            <div id="cart-list"></div>
+            <p id="total-price"></p>
+
+            <button onclick="backToAreaFromCheckout()">エリアにもどる</button>
+
+
+            <h3>合計金額を計算してみよう！</h3>
+            <input type="number" id="user-total" placeholder="自分で計算して入力">
+            <button onclick="checkUserTotal()">合計を確かめる</button>
+            <p id="total-feedback"></p>
+
+            <h3>お金を選んで支払い</h3>
+            <div class="money-options" id="money-options"></div>
+            <p id="paid-amount"></p>
+            <p id="change"></p>
+            <p id="payment-feedback"></p>
+            <button onclick="completePayment()">支払う</button>
+            <button onclick="resetPayment()">支払額をリセット</button>
+            <button onclick="resetApp()">最初からやり直す</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

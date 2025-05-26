@@ -1,0 +1,134 @@
+/* style.css */
+
+body {
+    font-family: 'Arial', 'Hiragino Kaku Gothic ProN', sans-serif;
+    background-color: #fdfaf6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+#app {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2,
+h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+input[type="number"] {
+    font-size: 1.2em;
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    margin: 8px 4px;
+    background-color: #ffcb6b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f0b429;
+}
+
+.area-list,
+.money-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.area-list button,
+.money-options button {
+    background-color: #cce5ff;
+    font-weight: bold;
+}
+
+.item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.item-card {
+    width: calc(50% - 8px);
+    /* 横2枚にする */
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.area-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: space-between;
+}
+
+.area-card {
+    width: calc(50% - 8px);
+    box-sizing: border-box;
+    background-color: #eef5ff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.area-card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 8px;
+}
+
+.area-card button {
+    background-color: #cce5ff;
+    font-weight: bold;
+}
+
+
+#cart-list p {
+    margin: 4px 0;
+}
+
+#paid-amount,
+#change {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #2c3e50;
+}
