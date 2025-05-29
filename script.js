@@ -6,40 +6,40 @@ let cart = [];
 
 const items = {
     'お菓子': [
-        { name: 'チョコ', price: 100, image: 'choco.png' },
-        { name: 'グミ', price: 80, image: 'gummy.png' },
-        { name: 'ポテチ', price: 120, image: 'potato.png' },
-        { name: 'ビスケット', price: 90, image: 'biscuit.png' },
-        { name: 'あめ玉', price: 30, image: 'candy.png' },
-        { name: 'プリン', price: 110, image: 'pudding.png' },
-        { name: 'ゼリー', price: 70, image: 'jelly.png' },
-        { name: 'ポップコーン', price: 160, image: 'popcorn.png' }
+        { name: 'チョコ', price: 100, image: 'choco.webp' },
+        { name: 'グミ', price: 80, image: 'gummy.webp' },
+        { name: 'ポテチ', price: 120, image: 'potato.webp' },
+        { name: 'ビスケット', price: 90, image: 'biscuit.webp' },
+        { name: 'あめ玉', price: 30, image: 'candy.webp' },
+        { name: 'プリン', price: 110, image: 'pudding.webp' },
+        { name: 'ゼリー', price: 70, image: 'jelly.webp' },
+        { name: 'ポップコーン', price: 160, image: 'popcorn.webp' }
     ],
     'おもちゃ': [
-        { name: 'ミニカー', price: 300, image: 'car.png' },
-        { name: 'パズル', price: 400, image: 'puzzle.png' },
-        { name: 'ブロック', price: 350, image: 'block.png' },
-        { name: 'ボール', price: 200, image: 'ball.png' },
-        { name: 'ロボット', price: 450, image: 'robot.png' },
-        { name: 'なわとび', price: 300, image: 'jump_rope.png' },
-        { name: '指人形', price: 180, image: 'puppet.png' },
-        { name: '太鼓', price: 400, image: 'drum.png' }
+        { name: 'ミニカー', price: 300, image: 'car.webp' },
+        { name: 'パズル', price: 400, image: 'puzzle.webp' },
+        { name: 'ブロック', price: 350, image: 'block.webp' },
+        { name: 'ボール', price: 200, image: 'ball.webp' },
+        { name: 'ロボット', price: 450, image: 'robot.webp' },
+        { name: 'なわとび', price: 300, image: 'jump_rope.webp' },
+        { name: '指人形', price: 180, image: 'puppet.webp' },
+        { name: '太鼓', price: 400, image: 'drum.webp' }
     ],
     '飲み物': [
-        { name: 'お茶', price: 100, image: 'tea.png' },
-        { name: 'オレンジジュース', price: 150, image: 'juice.png' },
-        { name: 'ミルク', price: 120, image: 'milk.png' },
-        { name: 'サイダー', price: 100, image: 'cider.png' },
-        { name: 'コーラ', price: 140, image: 'cola.png' },
-        { name: '100%オレンジジュース', price: 130, image: 'orange_juice.png' },
-        { name: 'スポーツドリンク', price: 150, image: 'sports_drink.png' },
-        { name: '野菜ジュース', price: 160, image: 'vegetable_juice.png' }
+        { name: 'お茶', price: 100, image: 'tea.webp' },
+        { name: 'オレンジジュース', price: 150, image: 'juice.webp' },
+        { name: 'ミルク', price: 120, image: 'milk.webp' },
+        { name: 'サイダー', price: 100, image: 'cider.webp' },
+        { name: 'コーラ', price: 140, image: 'cola.webp' },
+        { name: '100%オレンジジュース', price: 130, image: 'orange_juice.webp' },
+        { name: 'スポーツドリンク', price: 150, image: 'sports_drink.webp' },
+        { name: '野菜ジュース', price: 160, image: 'vegetable_juice.webp' }
     ],
     '本': [
-        { name: '絵本', price: 500, image: 'picturebook.png' },
-        { name: '図鑑', price: 700, image: 'encyclopedia.png' },
-        { name: 'まんが本', price: 350, image: 'manga.png' },
-        { name: '図工ブック', price: 400, image: 'artbook.png' }
+        { name: '絵本', price: 500, image: 'picturebook.webp' },
+        { name: '図鑑', price: 700, image: 'encyclopedia.webp' },
+        { name: 'まんが本', price: 350, image: 'manga.webp' },
+        { name: '図工ブック', price: 400, image: 'artbook.webp' }
     ]
 };
 
